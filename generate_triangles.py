@@ -4,20 +4,24 @@ import matplotlib.pyplot as plt
 import svgwrite
 
 
-#size factor
-L = 225.
-N = 3
+L = 225.  #panel size in mm.
+N = 3      #Panel number radius of parabola
+materialthickness = 4.
+connectorheight = 50.
+cutwidth = 1.   #Should be set to 0.01mm for ponoko, but then I can't see. Do in inkscape afertwards
+
+
 
 totalsize = L * 2 * N #approximate total radius
 
 print 'Diameter: ' + str(totalsize) + 'mm'
 # ponoko cardcoard is 4mm
-materialthickness = 4.
+
 
 notchlength = L/6
 notchwidth = materialthickness
 
-connectorheight = 50.
+
 halfheight = connectorheight/2.
 
 f= totalsize / 3 #* L
@@ -33,7 +37,7 @@ norm = np.linalg.norm
 
 cutstroke =svgwrite.rgb(0, 0, 255)
 #should be 0.01 for ponoko but then I cna't see anything
-cutwidth = 1.
+
 textstroke = svgwrite.rgb(246,146,30)
 
 
