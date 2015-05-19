@@ -6,7 +6,7 @@ You'll need to install python, numpy, scipy and matplotlib
 
 and also the package svgwrite:
 
-'pip install svgwrite'
+`pip install svgwrite`
 
 The most important parameters are in the file. L is length of triangle. N is number of triangles.
 
@@ -14,14 +14,14 @@ The most important parameters are in the file. L is length of triangle. N is num
 
 To see the parabola run the command
 
-'python plot_parabola.py'
+`python plot_parabola.py`
 
 
 ![Image of Parabola](parabola.png)
 
 To generate the svg files run
 
-'python generate_triangles.py'
+`python generate_triangles.py`
 
 The rest is possibly useful trash that I generated as intermediary steps.
 
