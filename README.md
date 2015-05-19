@@ -1,4 +1,4 @@
-# TTPP - The TZPP Parabola Project
+# TTPP - The TTPP Parabola Project
 
 This is some parabola generation software. It makes svg files for a laser cut parabola. I used Ponoko which seemed really expensive
 
