@@ -44,6 +44,8 @@ textstroke = svgwrite.rgb(246,146,30)
 
 
 dwg = svgwrite.Drawing('faces.svg', profile='full', size=('790mm', '384mm'))
+dwg.viewbox(0,0,790,384)
+
 dwg.add(dwg.rect(insert=(0,0),fill ='none', stroke=cutstroke, stroke_width=cutwidth, size=(790,384)))
 
 
@@ -281,6 +283,8 @@ dwg.save()
 #connector section
 
 dwg = svgwrite.Drawing('connectors.svg', profile='full', size=('791mm', '384mm'))
+dwg.viewbox(0,0,790,384)
+
 dwg.add(dwg.rect(insert=(0,0),fill ='none', stroke=cutstroke,stroke_width=cutwidth, size=(791,384)))
 
 def hat(v):
