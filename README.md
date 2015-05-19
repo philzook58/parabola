@@ -2,9 +2,9 @@
 
 This is some parabola generation software. It makes svg files for a laser cut parabola. I used Ponoko which seemed really expensive
 
-You'll need to install python, numpy, scipy and matplotlib
+You'll need to install python, numpy, scipy and matplotlib (which if you don't have already, what are you doing? You're missing out on the greatest things in life and will die angry and empty.)
 
-and also the package svgwrite:
+and also the package svgwrite (which is kind of meh. svg itself is so simple):
 
 `pip install svgwrite`
 
