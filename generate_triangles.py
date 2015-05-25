@@ -4,13 +4,19 @@ import matplotlib.pyplot as plt
 import svgwrite
 
 
-L = 225.  #panel size in mm.
+L = 100.  #panel size in mm.
 N = 3      #Panel number radius of parabola
 materialthickness = 4.
 connectorheight = 50.
 cutwidth = 1.   #Should be set to 0.01mm for ponoko, but then I can't see. Do in inkscape afertwards
 
+# 8.5 x 11 in mm
+materialx = 215.9
+materialy = 279.4
+#790,384 ponoko
 
+
+xspacing = 0
 
 totalsize = L * 2 * N #approximate total radius
 
@@ -43,10 +49,10 @@ textstroke = svgwrite.rgb(246,146,30)
 
 
 
-dwg = svgwrite.Drawing('faces.svg', profile='full', size=('790mm', '384mm'))
-dwg.viewbox(0,0,790,384)
+dwg = svgwrite.Drawing('faces.svg', profile='full', size=(str(materialx) + 'mm', str(materialy) +'mm'))
+dwg.viewbox(0,0,materialx,materialy)
 
-dwg.add(dwg.rect(insert=(0,0),fill ='none', stroke=cutstroke, stroke_width=cutwidth, size=(790,384)))
+dwg.add(dwg.rect(insert=(0,0),fill ='none', stroke=cutstroke, stroke_width=cutwidth, size=(materialx,materialy)))
 
 
 
@@ -198,7 +204,7 @@ def drawTriangle(triangle, edges, i , j, xoffset):
     myrect.translate((mid[0][0],mid[0][1]))
     myrect.rotate(angle1+180)
     """
-    trianglegroup.translate((xoffset,20))
+    trianglegroup.translate((xoffset,0))
 
     #temp = trianglecount
     #trianglecount = trianglecount + 1
@@ -236,7 +242,7 @@ def plotfaces():
 
                 drawTriangle(triangle,edges,i,j,xoffset)
 
-                xoffset = xoffset + triangle[1][0] + 10
+                xoffset = xoffset + triangle[1][0] + xspacing
 
                 trianglecount = trianglecount + 1
 
@@ -269,7 +275,7 @@ def plotfaces():
 
                 drawTriangle(triangle,edges,i,j,xoffset)
 
-                xoffset = xoffset + triangle[1][0] + 10
+                xoffset = xoffset + triangle[1][0] + xspacing
 
                 trianglecount = trianglecount + 1
     print str(trianglecount) + " faces made"
@@ -285,7 +291,7 @@ dwg.save()
 dwg = svgwrite.Drawing('connectors.svg', profile='full', size=('791mm', '384mm'))
 dwg.viewbox(0,0,790,384)
 
-dwg.add(dwg.rect(insert=(0,0),fill ='none', stroke=cutstroke,stroke_width=cutwidth, size=(791,384)))
+dwg.add(dwg.rect(insert=(0,0),fill ='none', stroke=cutstroke,stroke_width=cutwidth, size=(materialx,materialy)))
 
 def hat(v):
     return v / np.linalg.norm(v)
