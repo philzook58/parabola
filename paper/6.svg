@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg4416"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="New document 6">
+  <defs
+     id="defs4418" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="353.03301"
+     inkscape:cy="464.53097"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1352"
+     inkscape:window-height="898"
+     inkscape:window-x="2127"
+     inkscape:window-y="66"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata4421">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="triangle11"
+       transform="matrix(0,3.5433071,-3.5433071,0,731.52908,13.869455)"
+       style="stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">
+      <text
+         x="35.901699"
+         y="39.81424"
+         id="text251"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">1,1L</text>
+      <polygon
+         points="73.641172,39.056654 88.548292,46.510214 67.082039,89.442719 34.74102,46.32136 48.074353,36.32136 45.674353,33.12136 32.34102,43.12136 0,0 53.901699,0 53.901699,16.666667 57.901699,16.666667 57.901699,0 111.8034,0 90.337146,42.932505 75.430026,35.478945 "
+         id="polygon253"
+         style="fill:none;stroke:#0000ff;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none" />
+      <text
+         transform="matrix(-1,0,0,-1,59.901699,3.3333333)"
+         x="-2"
+         y="0"
+         id="text255"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(1,1) S</text>
+      <text
+         transform="matrix(0.4472136,-0.89442719,0.89442719,0.4472136,93.442719,33.054693)"
+         x="-2"
+         y="0"
+         id="text257"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(1,1) S</text>
+      <text
+         transform="matrix(0.6,0.8,-0.8,0.6,38.34102,44.72136)"
+         x="-2"
+         y="0"
+         id="text259"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(1,1) W</text>
+    </g>
+    <g
+       id="triangle2-3"
+       transform="matrix(0,3.5433071,-3.5433071,0,731.52908,410.02324)"
+       style="stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">
+      <text
+         x="38.962383"
+         y="38.92152"
+         id="text262"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">2,-3L</text>
+      <polygon
+         points="74.991055,36.067709 89.020053,45.065763 62.274875,86.764566 32.303633,45.007087 45.843666,35.28879 43.511274,32.039182 29.971242,41.757479 0,0 56.962382,0 56.962382,16.666667 60.962382,16.666667 60.962382,0 117.92476,0 91.179586,41.698803 77.150587,32.700749 "
+         id="polygon264"
+         style="fill:none;stroke:#0000ff;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none" />
+      <text
+         transform="matrix(-1,0,0,-1,62.962382,3.3333333)"
+         x="-2"
+         y="0"
+         id="text266"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(2,-3) S</text>
+      <text
+         transform="matrix(0.53988322,-0.84173993,0.84173993,0.53988322,94.09982,31.715616)"
+         x="-2"
+         y="0"
+         id="text268"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(2,-3) E</text>
+      <text
+         transform="matrix(0.58309783,0.81240195,-0.81240195,0.58309783,35.937438,43.382283)"
+         x="-2"
+         y="0"
+         id="text270"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(2,-3) W</text>
+    </g>
+    <g
+       id="triangle2-2"
+       transform="matrix(0,3.5433071,-3.5433071,0,351.87416,33.034127)"
+       style="stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">
+      <text
+         x="35.901699"
+         y="39.107082"
+         id="text273"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">2,-2L</text>
+      <polygon
+         points="31.897467,45.295852 45.524372,35.699746 43.221307,32.429289 29.594402,42.025394 0,0 53.901699,0 53.901699,16.666667 57.901699,16.666667 57.901699,0 111.8034,0 87.646094,41.927684 73.204938,33.607181 71.208017,37.073059 85.649174,45.393562 61.491869,87.321246 "
+         id="polygon275"
+         style="fill:none;stroke:#0000ff;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none" />
+      <text
+         transform="matrix(-1,0,0,-1,59.901699,3.3333333)"
+         x="-2"
+         y="0"
+         id="text277"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(2,-2) S</text>
+      <text
+         transform="matrix(0.49923018,-0.86646941,0.86646941,0.49923018,90.647634,31.993956)"
+         x="-2"
+         y="0"
+         id="text279"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(2,-2) W</text>
+      <text
+         transform="matrix(0.57576631,0.8176143,-0.8176143,0.57576631,35.545935,43.660623)"
+         x="-2"
+         y="0"
+         id="text281"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(2,-2) W</text>
+    </g>
+    <g
+       id="triangle2-1"
+       transform="matrix(0,3.5433071,-3.5433071,0,363.87416,423.18796)"
+       style="stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">
+      <text
+         x="35.901699"
+         y="39.107082"
+         id="text284"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">2,-1L</text>
+      <polygon
+         points="71.208017,37.073059 85.649174,45.393562 61.491869,87.321246 31.897467,45.295852 45.524372,35.699746 43.221307,32.429289 29.594402,42.025394 0,0 53.901699,0 53.901699,16.666667 57.901699,16.666667 57.901699,0 111.8034,0 87.646094,41.927684 73.204938,33.607181 "
+         id="polygon286"
+         style="fill:none;stroke:#0000ff;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none" />
+      <text
+         transform="matrix(-1,0,0,-1,59.901699,3.3333333)"
+         x="-2"
+         y="0"
+         id="text288"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(2,-1) W</text>
+      <text
+         transform="matrix(0.49923018,-0.86646941,0.86646941,0.49923018,90.647634,31.993956)"
+         x="-2"
+         y="0"
+         id="text290"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(2,-1) W</text>
+      <text
+         transform="matrix(0.57576631,0.8176143,-0.8176143,0.57576631,35.545935,43.660623)"
+         x="-2"
+         y="0"
+         id="text292"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(2,-1) S</text>
+    </g>
+    <g
+       id="g316"
+       transform="matrix(0,-3.5433071,3.5433071,0,15.983824,1033.5996)"
+       style="stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">
+      <text
+         x="35.901699"
+         y="39.107082"
+         id="text318"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">-3,0L</text>
+      <polygon
+         points="29.594402,42.025394 0,0 53.901699,0 53.901699,16.666667 57.901699,16.666667 57.901699,0 111.8034,0 87.646094,41.927684 73.204938,33.607181 71.208017,37.073059 85.649174,45.393562 61.491869,87.321246 31.897467,45.295852 45.524372,35.699746 43.221307,32.429289 "
+         id="polygon320"
+         style="fill:none;stroke:#0000ff;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none" />
+      <text
+         transform="matrix(-1,0,0,-1,59.901699,3.3333333)"
+         x="-2"
+         y="0"
+         id="text322"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(-3,0) E</text>
+      <text
+         transform="matrix(0.49923018,-0.86646941,0.86646941,0.49923018,90.647634,31.993956)"
+         x="-2"
+         y="0"
+         id="text324"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(-2,0) W</text>
+      <text
+         transform="matrix(0.57576631,0.8176143,-0.8176143,0.57576631,35.545935,43.660623)"
+         x="-2"
+         y="0"
+         id="text326"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(-3,0) E</text>
+    </g>
+    <g
+       id="g328"
+       transform="matrix(0,-3.5433071,3.5433071,0,15.983824,637.44556)"
+       style="stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">
+      <text
+         x="35.901699"
+         y="39.107082"
+         id="text330"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">-3,1L</text>
+      <polygon
+         points="29.594402,42.025394 0,0 53.901699,0 53.901699,16.666667 57.901699,16.666667 57.901699,0 111.8034,0 87.646094,41.927684 73.204938,33.607181 71.208017,37.073059 85.649174,45.393562 61.491869,87.321246 31.897467,45.295852 45.524372,35.699746 43.221307,32.429289 "
+         id="polygon332"
+         style="fill:none;stroke:#0000ff;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none" />
+      <text
+         transform="matrix(-1,0,0,-1,59.901699,3.3333333)"
+         x="-2"
+         y="0"
+         id="text334"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(-3,1) E</text>
+      <text
+         transform="matrix(0.49923018,-0.86646941,0.86646941,0.49923018,90.647634,31.993956)"
+         x="-2"
+         y="0"
+         id="text336"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(-2,1) W</text>
+      <text
+         transform="matrix(0.57576631,0.8176143,-0.8176143,0.57576631,35.545935,43.660623)"
+         x="-2"
+         y="0"
+         id="text338"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(-3,2) S</text>
+    </g>
+    <g
+       id="g340"
+       transform="matrix(0,-3.5433071,3.5433071,0,413.67935,1056.1246)"
+       style="stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">
+      <text
+         x="38.962383"
+         y="38.92152"
+         id="text342"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">-3,2L</text>
+      <polygon
+         points="60.962382,16.666667 60.962382,0 117.92476,0 91.179586,41.698803 77.150587,32.700749 74.991055,36.067709 89.020053,45.065763 62.274875,86.764566 32.303633,45.007087 45.843666,35.28879 43.511274,32.039182 29.971242,41.757479 0,0 56.962382,0 56.962382,16.666667 "
+         id="polygon344"
+         style="fill:none;stroke:#0000ff;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none" />
+      <text
+         transform="matrix(-1,0,0,-1,62.962382,3.3333333)"
+         x="-2"
+         y="0"
+         id="text346"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(-3,2) E</text>
+      <text
+         transform="matrix(0.53988322,-0.84173993,0.84173993,0.53988322,94.09982,31.715616)"
+         x="-2"
+         y="0"
+         id="text348"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(-3,3) S</text>
+      <text
+         transform="matrix(0.58309783,0.81240195,-0.81240195,0.58309783,35.937438,43.382283)"
+         x="-2"
+         y="0"
+         id="text350"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(-3,3) S</text>
+    </g>
+    <g
+       id="triangle-2-2"
+       transform="matrix(0,-3.5433071,3.5433071,0,387.63874,642.28104)"
+       style="stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">
+      <text
+         x="35.901699"
+         y="39.81424"
+         id="text353"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">-2,-2L</text>
+      <polygon
+         points="57.901699,0 111.8034,0 90.337146,42.932505 75.430026,35.478945 73.641172,39.056654 88.548292,46.510214 67.082039,89.442719 34.74102,46.32136 48.074353,36.32136 45.674353,33.12136 32.34102,43.12136 0,0 53.901699,0 53.901699,16.666667 57.901699,16.666667 "
+         id="polygon355"
+         style="fill:none;stroke:#0000ff;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none" />
+      <text
+         transform="matrix(-1,0,0,-1,59.901699,3.3333333)"
+         x="-2"
+         y="0"
+         id="text357"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(-2,-2) E</text>
+      <text
+         transform="matrix(0.4472136,-0.89442719,0.89442719,0.4472136,93.442719,33.054693)"
+         x="-2"
+         y="0"
+         id="text359"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(-2,-2) E</text>
+      <text
+         transform="matrix(0.6,0.8,-0.8,0.6,38.34102,44.72136)"
+         x="-2"
+         y="0"
+         id="text361"
+         style="fill:none;stroke:#f6921e;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none">(-2,-1) S</text>
+    </g>
+  </g>
+</svg>
