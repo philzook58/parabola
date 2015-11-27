@@ -4,15 +4,17 @@ import matplotlib.pyplot as plt
 import svgwrite
 
 
-L = 225.  #panel size in mm.
-N = 1      #Panel number radius of parabola
+#L = 225.  #panel size in mm.
+L = 80.
+N = 2      #Panel number radius of parabola
 materialthickness = 4.
-connectorheight = 50.
+#connectorheight = 50.
+connectorheight = 25.
 cutwidth = 1.   #Should be set to 0.01mm for ponoko, but then I can't see. Do in inkscape afertwards
+fontsize = 6
 
 
-
-totalsize = L * 2 * N #approximate total radius
+totalsize = L * 2 * N #approximate total diameter
 
 print 'Diameter: ' + str(totalsize) + 'mm'
 # ponoko cardcoard is 4mm
@@ -43,7 +45,7 @@ textstroke = svgwrite.rgb(246,146,30)
 
 
 
-dwg = svgwrite.Drawing('faces.svg', profile='full', size=('790mm', '384mm'))
+dwg = svgwrite.Drawing('faces.svg', profile='full', size=('790mm', '384mm'),style="font-size:"+str(fontsize)+";", viewBox="0 0 790 384")
 dwg.add(dwg.rect(insert=(0,0),fill ='none', stroke=cutstroke, stroke_width=cutwidth, size=(790,384)))
 
 
@@ -68,20 +70,20 @@ def projectTriangle(v1,v2,v3, xoffset=0):
     ne12 = norm(e12)
     ne23 = norm(e23)
     ne31 = norm(e31)
-    sortarray = [ne12, ne23, ne31]
-    sortindices = np.argsort(sortarray)
-    longnorm = sortarray[sortindices[-1]]
-    midnorm = sortarray[sortindices[1]]
-    longhat = edgearray[sortindices[-1]]/longnorm
+    #sortarray = [ne12, ne23, ne31]
+    #sortindices = np.argsort(sortarray)
+    #longnorm = sortarray[sortindices[-1]]
+    #midnorm = sortarray[sortindices[1]]
+    #longhat = edgearray[sortindices[-1]]/longnorm
     #print(sortindices)
     w1 = (xoffset,0)
-    w2 = (longnorm + xoffset,0)
-    mid = edgearray[sortindices[1]]
-    w3x = np.abs(np.dot(mid, longhat))
-    w3y = np.sqrt(midnorm**2 - w3x**2)
+    w2 = (ne12 + xoffset,0)
+    #mid = edgearray[sortindices[1]]
+    w3x = np.abs(np.dot(e12, e31))/ne12
+    w3y = np.sqrt(ne31**2 - w3x**2)
     #w3y = norm( mid - w3x * longhat)
     w3 = (w3x + xoffset,w3y)
-    return ([w1,w2,w3],sortindices)
+    return [w1,w2,w3]
 
 
 
@@ -168,18 +170,18 @@ def drawTriangle(triangle, edges, i , j, xoffset,LR):
 
 
 
-    #LONG
+    #LONG is now e12
     myrect = trianglegroup.add(dwg.text(edgelabel(edges[0]), insert=(-notchwidth/2.,0), stroke=textstroke , fill='none'))
     myrect.translate((mid[1][0] + notchwidth,mid[1][1] + notchlength * .2))
     myrect.rotate(180.)
 
-    #SHORT LABEL
-    myrect = trianglegroup.add(dwg.text(edgelabel(edges[2]),  insert=(-notchwidth/2.,0), stroke=textstroke , fill='none'))
+    #SHORT LABEL e23
+    myrect = trianglegroup.add(dwg.text(edgelabel(edges[1]),  insert=(-notchwidth/2.,0), stroke=textstroke , fill='none'))
     myrect.translate((mid[2][0]  + notchwidth ,mid[2][1]  - notchlength * .7 ))
     myrect.rotate(-angle2)
 
-    #MID Label
-    myrect = trianglegroup.add(dwg.text(edgelabel(edges[1]), insert=(-notchwidth/2.,0), stroke=textstroke , fill='none'))
+    #MID Label e13
+    myrect = trianglegroup.add(dwg.text(edgelabel(edges[2]), insert=(-notchwidth/2.,0), stroke=textstroke , fill='none'))
     myrect.translate((mid[0][0] +1.2 * notchwidth , mid[0][1] ))
     myrect.rotate(angle1)
 
@@ -210,27 +212,28 @@ def plotfaces():
         for j in range(-N,N):
             if(i+j+1 <= N and i+j >= -N):
                 #Left face
-                a1 = coords(i+1,j)
-                a2 = coords(i,j+1)
-                a3 = coords(i,j)
+                a1 = coords(i,j)
+                a2 = coords(i+1,j)
+                a3 = coords(i,j+1)
+
 
                 v1 = np.array([a1[0],a1[1], z(a1)])
                 v2 = np.array([a2[0],a2[1], z(a2)])
                 v3 = np.array([a3[0],a3[1], z(a3)])
 
                 temp = projectTriangle(v1,v2,v3)
-                triangle = temp[0]
-                edgeorder = temp[1]
+                triangle = temp
+                #edgeorder = temp[1]
                 tempedges = [
                 (i,j,'S' ), #e12
-                (i,j,'W' ),        #e23
-                (i,j,'E' ),        #e13
+                (i,j,'E' ),        #e23
+                (i,j,'W' ),        #e13
 
                 ]
 
                 edges = tempedges
-                for q in range(3):
-                    edges[2-q] = tempedges[edgeorder[q]]
+                #for q in range(3):
+                #    edges[2-q] = tempedges[edgeorder[q]]
 
                 drawTriangle(triangle,edges,i,j,xoffset,'L')
 
@@ -244,26 +247,26 @@ def plotfaces():
         for j in range(-N,N):
             if(i+j+2 <= N and i+j+1 >= -N):
                 a1 = coords(i+1,j)
-                a2 = coords(i,j+1)
-                a3 = coords(i+1,j+1)
+                a2 = coords(i+1,j+1)
+                a3 = coords(i,j+1)
 
                 v1 = np.array([a1[0],a1[1], z(a1)])
                 v2 = np.array([a2[0],a2[1], z(a2)])
                 v3 = np.array([a3[0],a3[1], z(a3)])
 
                 temp = projectTriangle(v1,v2,v3)
-                triangle = temp[0]
-                edgeorder = temp[1]
+                triangle = temp
+                #edgeorder = temp[1]
                 tempedges = [
-                (i,j,'E' ), #e12
+                (i+1,j,'W' ), #e12
                 (i,j+1,'S' ),        #e23
-                (i+1,j,'W' ),        #e13
+                (i,j,'E' ),        #e13
 
                 ]
 
                 edges = tempedges
-                for q in range(3):
-                    edges[2-q] = tempedges[edgeorder[q]]
+                #for q in range(3):
+                #    edges[2-q] = tempedges[edgeorder[q]]
 
                 drawTriangle(triangle,edges,i,j,xoffset,'R')
 
@@ -280,7 +283,7 @@ dwg.save()
 
 #connector section
 
-dwg = svgwrite.Drawing('connectors.svg', profile='full', size=('791mm', '384mm'))
+dwg = svgwrite.Drawing('connectors.svg', profile='full', size=('791mm', '384mm'),style="font-size:"+str(fontsize)+";")
 dwg.add(dwg.rect(insert=(0,0),fill ='none', stroke=cutstroke,stroke_width=cutwidth, size=(791,384)))
 
 def hat(v):
@@ -340,7 +343,7 @@ def plotedges():
 
                 # suth edge borders i,j L, i-1, j-1 R
                 triangle1 = corners(i,j,'L')
-                triangle2 = corners(i-1,j-1,'R')
+                triangle2 = corners(i,j-1,'R')
                 #print triangle1[0]-triangle1[1]
                 norm1 = normal(triangle1[0],triangle1[1],triangle1[2])
 
@@ -383,9 +386,9 @@ def grabangle(obj):
 
 def sortangles():
     return sorted(angles, key=grabangle)
-
+print angles
 angles = sortangles()
-
+#print angles
 
 def drawConnectors():
     currenty = 0.
